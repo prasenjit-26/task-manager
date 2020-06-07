@@ -27,7 +27,32 @@
 .App-link {
   color: #61dafb;
 }
+.server-style {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  border: 1px solid #666;
+  margin-top: 20px;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(182, 188, 226);
+}
+.in {
+  animation: fill 20s linear infinite;
+  height: 100%;
+  background-color: #3f51b5;
+}
 
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
